@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fraunces", serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0e3ce;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 36%;
+  height: 55%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  min-width: 450px;
+}
+
+.img,
+.content {
+  height: 100%;
+  width: 50%;
+}
+
+img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  filter: brightness(90%);
+}
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.content h4 {
+  color: rgb(54, 52, 52);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.content h1 {
+  line-height: 0.9em;
+  margin: 10px 0;
+}
+
+.content p {
+  color: rgb(54, 52, 52);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.content .price {
+  font-size: 1.6em;
+  color: #3d8168;
+  display: flex;
+  gap: 1.2em;
+  align-items: center;
+}
+
+.price .green {
+  font-family: "Fraunces", serif;
+  font-size: 1.1em;
+  color: #3d8168;
+}
+
+.price .grey {
+  font-size: 0.5em;
+  text-decoration: line-through;
+}
+
+.content span {
+  font-size: 0.5em;
+  color: rgb(54, 52, 52);
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    min-width: 250px;
+    width: 335px;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    filter: brightness(90%);
+  }
+
+  .img {
+    width: 100%;
+    height: 50%;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h4 {
+    margin-top: -10px;
+  }
+
+  .content h1 {
+    line-height: 1em;
+  }
+}
