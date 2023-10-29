@@ -8,19 +8,20 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #f0e3ce;
+  background-color: hsl(30, 38%, 92%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 36%;
+  min-width: 343px;
+  width: 100%;
+  max-width: 600px;
   height: 55%;
   background-color: white;
   border-radius: 10px;
   display: flex;
-  min-width: 450px;
 }
 
 .img,
@@ -99,6 +100,12 @@ button {
   border: none;
   font-weight: 700;
   font-family: "Montserrat", sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 @media only screen and (max-width: 600px) {
